@@ -36,9 +36,10 @@ public enum Tipo {
 			return Categoria.ACCESORIO;
 		}
 	},
-	RELOJANTEOJOS{
+	RELOJ{
 		public Categoria verCategoria() {
 			return Categoria.ACCESORIO;
 		}
-	}
+	};
+
 }
