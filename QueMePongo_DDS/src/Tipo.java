@@ -1,45 +1,23 @@
  
 
-public enum Tipo {
-	ZAPATOS{
-		public Categoria verCategoria() {
-			return Categoria.CALZADO;
-		}
-	},
-	PANTALON{
-		public Categoria verCategoria() {
-			return Categoria.PARTE_INFERIOR;
-		}
-	},
-	REMERA_CORTA{
-		public Categoria verCategoria() {
-			return Categoria.PARTE_SUPERIOR;
-		}
-	},
-	REMERA_LARGA{
-		public Categoria verCategoria() {
-			return Categoria.PARTE_SUPERIOR;
-		}
-	},
-	SHORT{
-		public Categoria verCategoria() {
-			return Categoria.PARTE_INFERIOR;
-		}
-	},
-	CAMPERA{
-		public Categoria verCategoria() {
-			return Categoria.PARTE_SUPERIOR;
-		}
-	},
-	ANTEOJOS{
-		public Categoria verCategoria() {
-			return Categoria.ACCESORIO;
-		}
-	},
-	RELOJ{
-		public Categoria verCategoria() {
-			return Categoria.ACCESORIO;
-		}
-	};
+public class Tipo {
+	
+	Categoria categoria;
+	
+	Tipo(Categoria categoria){
+    this.categoria = categoria;
+	}
 
+	Categoria categoria() {
+    return this.categoria;
+	}
+	
+	Tipo ZAPATOS = new Tipo(Categoria.CALZADO);
+	Tipo PANTALON = new Tipo(Categoria.PARTE_INFERIOR);
+	Tipo REMERA_CORTA = new Tipo(Categoria.PARTE_SUPERIOR);
+	Tipo REMERA_LARGA = new Tipo(Categoria.PARTE_SUPERIOR);
+	Tipo SHORT = new Tipo(Categoria.PARTE_INFERIOR);
+	Tipo CAMPERA = new Tipo(Categoria.PARTE_SUPERIOR);
+	Tipo ANTEOJOS = new Tipo(Categoria.ACCESORIO);
+	Tipo RELOJ = new Tipo(Categoria.ACCESORIO);
 }

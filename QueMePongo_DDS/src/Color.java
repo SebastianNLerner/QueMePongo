@@ -1,4 +1,8 @@
 
-public enum Color {
-	AZUL,NEGRO,BLANCO,ROJO,AMARILLO,VERDE,NOCOLOR
+
+public class Color {
+	String nombre;
+	int r;
+	int g;
+	int b;
 }
